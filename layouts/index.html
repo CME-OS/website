@@ -1,0 +1,55 @@
+{{ define "title"}} {{ .Site.Title}} {{end}} {{ define "header"}} {{ partial "header" .}} {{end}} {{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="/demo" target="_blank">Demo</a>
+    <a class="button outline big" href="https://github.com/cme-os/cme" target="_blank">View on Github</a>
+  </div>
+  <div id="kube-features">
+    <div class="row">
+      <div class="col-12 col">
+        <h2>What is Campaigns Made Easy?</h2>
+        <p>Campaigns Made Easy aka (CME) is an open source email campaign system just like phpList and MailChimp that allows
+          you to create email lists and send out campaigns.</p>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h3>Free &amp; Open Source</h3>
+        <p>This means you have full control over your email lists and campaigns. This makes CME a really cheap way to send email
+          campaigns because its free to use</p>
+      </div>
+      <div class="col col-4 item">
+        <h3>Easy to Install</h3>
+        <p>CME is really easy to install. Just download it onto your web server. Point your browser to it and follow the installation
+          wizard
+        </p>
+      </div>
+      <div class="col col-4 item">
+        <h3>Active Community</h3>
+        <p>CME has an active and friendly community who contribute to the development and reliability of CME and are always
+          happy to support its users</p>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Multiple SMTP Providers</h4>
+        <p>CME allows you to send campaigns through different SMTP providers. This gives you more flexibility as you can for
+          example, send transactional emails through Mandrill and Campaigns through AWS!</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Powerful Analytics Report</h4>
+        <p>Track how your campaigns perform by seeing the number of clicks, bounce rate and unsubscribes.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Perfect for Business Owners</h4>
+        <p>If you are a business owner with multiple brands. CME allows you to manage campaigns for all brands in one interface.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }} {{ define "footer"}} {{ partial "footer" .}} {{end}}
